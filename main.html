@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main Block</title>
+</head>
+<body>
+    <nav class="flex nav-1 gap-4 py-4 w-full item-center ">
+        <div class="py-2 px-3 font-medium	 cursor-pointer">MDIF</div>
+        <div onclick="openList()" class="py-2 px-3 font-medium	 cursor-pointer">Օրվա խորհուրդը</div>
+        <div onclick="openHelpModal()"  class="py-2 px-3 font-medium	 cursor-pointer">HELP</div>
+    </nav>
+    <nav class="flex border nav-1 pl-2  w-full item-center ">
+        <div class="py-2 border  px-3 font-bold cursor-pointer">X</div>
+        <div onclick="openAbout()" class="py-2 border px-3 font-bold cursor-pointer">About</div>
+        <div id="exitBtn" onclick="openExitModal()" class="py-2 border px-3 font-bold cursor-pointer">Exit</div>
+    </nav>
+
+    <!-- modal about -->
+
+    <div id="about" class="modal-exit">
+        <div class="modal-content modal-help">
+            <div>
+                <h1 class="text-center text-xl font-bold">About</h1>
+                <div class="my-3">
+                    <li>Փաշայան Իլիկո Նորայրի</li>
+                    <li>Երևանի ինֆորմատիկայի պետական քոլեջ</li>
+                    <li class="font-bold">12/7/2022</li>
+                    <div class=" h-8">
+                    <p  class="course-name text-center my-4 font-bold">Գովազդային պատուհան բացելու ծրագիր </p>
+                    </div>
+                    <img style="width:120px;" class="mt-2" src="http://telecom.arka.am/upload/iblock/55d/55df869a8e1d0caee53c3bc5025f7237.jpg" alt="">
+                </div>
+            </div>
+          <div class="btn-block">
+            <button onclick="closeHelpModal()">OK</button>
+        </div>
+        </div>
+    </div>
+    
+<!-- modal exit -->
+    <div id="modal-exit" class="modal-exit">
+        <div class="modal-content">
+          <p>Are you sure ?</p>
+          <div class="btn-block">
+            <button onclick="exit()" >OK</button>
+            <button onclick="closeExitModal()">Cancel</button>
+        </div>
+        </div>
+    </div>
+    <!-- modal help -->
+
+    <div id="modal-help" class="modal-exit">
+        <div class="modal-content modal-help">
+            <div class="top-panel"><span>Help</span><span class="cursor-pointer" onclick="closeHelpModal()">X</span></div>
+            <textarea id="message" placeholder="Help" class="help-text-box"></textarea>
+          <div class="btn-block">
+            <button onclick="closeHelpModal()">OK</button>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="home.js"></script>
+</body>
+</html>

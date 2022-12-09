@@ -1,0 +1,141 @@
+
+body{
+    margin: 0;
+} 
+
+.main-block{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.modal{
+    background: #bfbfbf;
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form div input {
+    width: 100%;
+    margin-left: 20px;
+    background: #bfbfbf;
+    border-top:  2px solid black;
+    border-left: 2px solid black;
+    border-bottom:  2px solid white;
+    border-right: 2px solid white;
+    padding: 5px 3px;
+}
+.lable{
+    width: 140px;
+    font-size: 19px;
+}
+.lablee{
+    width: 235px;
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+
+.btn-block{
+    margin-top: 10px;
+    display: flex;
+    margin: auto;
+    width: 60%;
+    justify-content: space-around;
+}
+.btn-block button{
+    background: #bfbfbf;
+    border-bottom:  2px solid black;
+    border-right: 2px solid black;
+    border-top:  2px solid white;
+    border-left: 2px solid white;
+    cursor: pointer;
+    padding: 5px 30px;
+}
+
+.nav-1{
+    background: #bfbfbf;
+}
+
+.modal-exit {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7); 
+  }
+  
+
+  .modal-content {
+    background: #bfbfbf;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    padding: 20px;
+    width: 500px;
+  }
+  .modal-content p {
+    text-align: center;
+    margin: 30px 0px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .top-panel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #3182ce;
+  }
+  .top-panel span{
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .help-text-box{
+    margin:20px 0px ;
+    padding: 10px;
+    width: 100%;
+    background: #bfbfbf;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    height: 200px;
+  }
+
+
+  .modal-help{
+    top: 26%;
+  }
+
+.course-name{
+    animation: scale 3s infinite ;
+    animation-duration: 1.5s;
+}
+
+
+@keyframes scale {
+  0% {transform: scale(1)  } 
+  50% { transform: scale(1.3) }
+  100% { transform: scale(1) }
+}

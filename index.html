@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Course work 911</title>
+</head>
+<body>
+    <div class="main-block">
+        <div id="modal" class="modal flex flex-col">
+            <div class="bg-blue-600 p-2 "> <h1 class=" te text-white text-[20px]">Password</h1></div>
+            <form onsubmit="return false" class="flex flex-col px-10 py-2">
+                <div class="my-4"><h1 class="lable">User Name</h1><input id="username" value="il_pashayan" type="text"></div>
+                <div id="error1"  class="err-password text-red-600 mb-4"></div>
+                <div class="mb-4"><h1 class="lable">Password</h1><input id="password" type="password"></div>
+                <div id="error2"  class="err-password text-red-600 mb-4"></div>
+                <div class="btn-block">
+                    <button id="submit">OK</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+                <button class="mt-2" id="changePassword">Փեխել տվյալները</button>
+            </form>
+        </div>
+
+         <!-- cahange password section -->
+
+         <div id="modal2" class="modal hidden flex-col">
+            <div class="bg-blue-600 p-2 "> <h1 class=" te text-white text-[20px]">Change Password and Username</h1></div>
+            <form onsubmit="return false" class="flex flex-col px-10 py-2">
+                <div class="my-4"><h1 class="lablee">New User Name</h1><input id="newusername" type="text"></div>
+                <div id="error1"  class="err-password text-red-600 mb-4"></div>
+                <div class="mb-4"><h1 class="lablee">New Password</h1><input id="newpassword" type="password"></div>
+                <div id="error2"  class="err-password text-red-600 mb-4"></div>
+                <div class="btn-block">
+                    <button id="change">Change</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
