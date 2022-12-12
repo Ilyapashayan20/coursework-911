@@ -1,7 +1,10 @@
+
 const modalExit = document.getElementById('modal-exit')
 const modalHelp = document.getElementById('modal-help')
 const helpMessage = document.getElementById('message')
 const about = document.getElementById('about')
+
+const adviceDay = document.getElementById('adviceDay')
 
 
 function openExitModal(){
@@ -31,3 +34,18 @@ function closeHelpModal(){
 function openAbout(){
     about.style.display = 'block'
 }
+
+
+
+function openList(){
+    adviceDay.style.display = 'block'
+    fetch("text.json").then(function(response) {
+        console.log(response);
+      });
+}
+
+function closeAdModal(){
+    adviceDay.style.display = 'none'
+}
+
+// console.log(data)
